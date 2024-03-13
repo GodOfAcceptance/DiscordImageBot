@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'com.github.godofacceptance'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation 'org.javacord:javacord:3.8.0'
+    implementation 'org.json:json:20230618'
+    implementation 'com.google.apis:google-api-services-customsearch:v1-rev20210918-2.0.0'
+}
+
+test {
+    useJUnitPlatform()
+}
